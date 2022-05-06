@@ -1,0 +1,22 @@
+AbstractEntity.java
+  メソッド名が違う
+  public void onPrePersist() {
+
+application.yml
+  servret
+    スペルが違う
+  
+  spring:
+    11行目のこれ不要
+  
+  max-repuest-size: 20MB
+    pじゃなくてq
+  
+  インデントが違う
+  servlet:
+    multipart:
+      max-file-size: 20MB
+      max-repuest-size: 20MB
+
+  image:
+    local: true

@@ -9,7 +9,7 @@ services:
     volumes:
       - .:/app
     working_dir: /app
-    command: bash -c 'chmod +x ./pictgram/mvnw && ./pictgram/mvnw spring-boot:run'
+    command: sleep 360000
     depends_on:
       - db
 
