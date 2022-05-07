@@ -165,6 +165,7 @@ public class TopicsController {
         entity.setDescription(form.getDescription());
         repository.saveAndFlush(entity);
 
+        model.addAttribute("description", entity.getDescription());
         redirAttrs.addFlashAttribute("hasMessage", true);
         redirAttrs.addFlashAttribute("class", "alert-info");
         redirAttrs.addFlashAttribute("message", "投稿に成功しました。");
